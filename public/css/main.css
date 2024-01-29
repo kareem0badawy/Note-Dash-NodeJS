@@ -72,10 +72,11 @@ h1,h2,h3,h4,h5,h6 {
 /* Home */
 @media (min-width: 1200px) {
   .home {
+    /* bottom bottom */
     background: 
-      url('../img/human-1.svg') left bottom no-repeat,
-      url('../img/human-2.svg') right bottom no-repeat,
-      url('../img/noise-bg.svg') left top repeat,
+      url('../img/human-1.svg') left no-repeat,
+      url('../img/human-2.svg') right no-repeat,
+      url('../img/noise-bg.png') left top repeat,
       var(--background-color);
   }
 }

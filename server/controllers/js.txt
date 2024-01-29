@@ -1,0 +1,58 @@
+async function insertNote(){
+    try{
+      await Note.insertMany([
+        {
+          user: "65b7ca32087667ea5bf17925",
+          title: "NodeJs Tutorial",
+          body: "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient.",
+          createdAt: Date.now(),
+        },
+        {
+          user: "65b7ca32087667ea5bf17925",
+          title: "React.js Tutorial",
+          body: "React.js is a JavaScript library for building user interfaces. It allows developers to create reusable UI components and build efficient and declarative UIs.",
+          createdAt: Date.now(),
+        },
+        {
+          user: "65b7ca32087667ea5bf17925",
+          title: "PHP Basics",
+          body: "PHP is a server-side scripting language designed for web development. It is widely used for creating dynamic web pages and can be embedded into HTML.",
+          createdAt: Date.now(),
+        },
+        {
+          user: "65b7ca32087667ea5bf17925",
+          title: "Laravel Introduction",
+          body: "Laravel is a PHP web application framework known for its elegant syntax and tools for tasks such as routing, authentication, and caching. It follows the MVC pattern.",
+          createdAt: Date.now(),
+        },
+        {
+          user: "65b7ca32087667ea5bf17925",
+          title: "MySQL Basics",
+          body: "MySQL is an open-source relational database management system. It is widely used for managing and storing data in web applications.",
+          createdAt: Date.now(),
+        },
+        {
+          user: "65b7ca32087667ea5bf17925",
+          title: "Python Crash Course",
+          body: "Python is a high-level programming language known for its readability and versatility. It is widely used for web development, data analysis, and artificial intelligence.",
+          createdAt: Date.now(),
+        },
+        {
+          user: "65b7ca32087667ea5bf17925",
+          title: "Vue.js Essentials",
+          body: "Vue.js is a progressive JavaScript framework for building user interfaces. It is designed to be incrementally adaptable and can be easily integrated into other projects.",
+          createdAt: Date.now(),
+        },
+        {
+          user: "65b7ca32087667ea5bf17925",
+          title: "Getting Started with Tailwind CSS",
+          body: "Tailwind CSS is a utility-first CSS framework that provides low-level utility classes to build designs directly in your markup. It allows for rapid development and customization.",
+          createdAt: Date.now(),
+        },
+      ])
+    } catch(error) {
+      console.log(error);
+    }
+  }
+
+  insertNote();
